@@ -5,14 +5,13 @@
  */
 var twoSum = function (nums, target) {
     let mpp = new Map();
-    let i = 0;
-    for (num of nums) {
-        let temp = target - num;
-        if (mpp.has(temp)) { 
-            return [mpp.get(temp), i];
+    // for(let num of nums){
+    for (let i = 0; i < nums.length; i++) {
+        let temp = target - nums[i]
+        if (mpp.has(temp)) {
+            console.log(mpp.get(temp), i)
+            return [mpp.get(temp), i]
         }
-        else mpp.set(num, i);
-        i++;
+        mpp.set(nums[i], i)
     }
-    return [];
 };
