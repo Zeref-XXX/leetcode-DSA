@@ -10,8 +10,7 @@ public:
             if(rev>=INT_MAX/10) return false;
             rev=rev*10+rem;
         }
-        
-        if (rev==x || x<9) return true;
-        return false;
+         
+        return rev==x || x<9;
     }
 };
