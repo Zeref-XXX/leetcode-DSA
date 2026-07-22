@@ -6,7 +6,7 @@ public:
         // first
         while (start <= end) {
             int mid = start + (end - start) / 2;
-            cout << mid << " ";
+           
             if (nums[mid] == target) {
                 first = mid;
                 end = mid - 1;
